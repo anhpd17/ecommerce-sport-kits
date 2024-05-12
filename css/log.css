@@ -1,0 +1,55 @@
+@import url('./index.css');
+body{
+    display: flex;
+    align-items: center;
+}
+.acc-left, .acc-right{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.acc-left{
+    background-image: url('https://w0.peakpx.com/wallpaper/803/275/HD-wallpaper-messi-10-goat-thebest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: #fff;
+}
+
+.logo img{
+    height: 70px;
+}
+.acc-right h1{
+    font-size: 28px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.form input{
+    display: block;
+    margin-top: 8px;
+}
+.form a{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.form-group input{
+    width: 400px;
+    border: 1px solid #b9b6b6;
+}
+.form-group label{
+    font-weight: bold;
+}
+.form .sign-btn{
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 999px;
+}
