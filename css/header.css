@@ -1,0 +1,36 @@
+#header{
+    height: 70px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 0 5px #333;
+}
+.header-left img{
+    height: 40px;
+}
+.header-nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-item{
+    cursor: pointer;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+.header-icon{
+    padding: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
