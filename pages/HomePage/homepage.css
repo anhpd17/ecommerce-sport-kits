@@ -1,0 +1,29 @@
+/* #slider{
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  .slider-img{
+    height: 80vh;
+    background-image:url("https://pfcvintage.com/cdn/shop/files/Pop-up-banner.png?v=1715127718&width=2400");
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+  .slider-text {
+    position: absolute;
+    right: 115px;
+    top: 30%;
+    color: white;
+    width: 600px;
+    text-align: center;
+    font-size:20px;
+    
+  
+  } */
+
+  .carousel-item{
+    height: 80vh;
+    
+  }
