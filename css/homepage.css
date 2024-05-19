@@ -1,3 +1,96 @@
-@import url('./index.css');
-@import url('./header.css');
+* {
+    margin: 0;
+    padding: 0;
+    
+    
+  }
 
+/* #slider{
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  .slider-img{
+    height: 80vh;
+    background-image:url("https://pfcvintage.com/cdn/shop/files/Pop-up-banner.png?v=1715127718&width=2400");
+    background-position: center;
+    background-size: cover;
+    
+  }
+  
+  .slider-text {
+    position: absolute;
+    right: 115px;
+    top: 30%;
+    color: white;
+    width: 600px;
+    text-align: center;
+    font-size:20px;
+    
+  
+  } */
+
+  .carousel-item{
+    height: 80vh;
+    
+  }
+
+  .products {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+    padding: 0 100px;
+    
+  }
+  .product-item1 .name{
+    font-size: 20px;
+    padding: 12px;
+    width: 100%;
+  }
+  .product-item1{
+    display: block;
+    
+  }
+  .info{
+    text-align: left;
+    margin: 10px 0;
+    font-style: solid;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .detail-outer{
+    display: flex;
+    justify-content: center;
+  }
+  .detail-container {
+    margin: 25px 0;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(8, 55, 144);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-style: solid;
+    font-size: 17px;
+    font-weight: bold;
+    
+  }
+  .detail-outer .detail-container:hover {
+    background-color: black;
+    cursor: pointer;
+
+  }
+
+  .product-icon img{
+    height: 300px;
+    width: 294px;
+  }
+
+
+.product-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
