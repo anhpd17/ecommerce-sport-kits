@@ -1,0 +1,126 @@
+@import url('./header.css');
+@import url('./index.css');
+
+#content{
+    padding: 40px 80px;
+    margin: 40px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 56px;
+}
+
+.img-block{
+    width: 50%;
+}
+.text-block{
+    width: 50%;
+}
+.img-block>img{
+    /* height: 426px; */
+    width: 100%;
+    /* margin: 0 30px; */
+    margin-bottom: 16px;
+}
+.mini-img img{
+    width: 24%;
+}
+.text-block{
+    margin: 0 30px;
+}
+.text-block h1{
+    font-size: 40px;
+}
+.text-block h4{
+    font-size: 18px;
+}
+
+.sizes{
+    display: flex;
+    
+    
+}
+.sizes button{
+    background: transparent;
+    color: #000000;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* margin-top: 25px; */
+    cursor: pointer;
+    margin: 0 7px;
+    
+}
+.mini-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 7px;
+}
+
+.mini-img img{
+    height: 120px;
+    width: 120px;
+}
+
+
+
+.products {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+    padding: 0 100px;
+    
+  }
+  .product-item1 .name{
+    font-size: 20px;
+    padding: 12px;
+    width: 100%;
+  }
+  .product-item1{
+    display: block;
+    
+  }
+  .info{
+    text-align: left;
+    margin: 10px 0;
+    font-style: solid;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .detail-outer{
+    display: flex;
+    justify-content: center;
+  }
+  .detail-container {
+    margin: 25px 0;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(8, 55, 144);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-style: solid;
+    font-size: 17px;
+    font-weight: bold;
+    
+  }
+  .detail-outer .detail-container:hover {
+    background-color: black;
+    cursor: pointer;
+
+  }
+
+  .product-icon img{
+    height: 300px;
+    width: 294px;
+  }
+
+
+.product-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
