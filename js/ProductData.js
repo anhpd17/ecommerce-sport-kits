@@ -60,3 +60,68 @@ const ProductData = [
         price: 100000
     }
 ]
+
+const productDetailData = {
+    FCB: {
+        player: [
+            {
+                value: 1,
+                name: "3 (PIQUE)"
+            },
+            {
+                value: 2,
+                name: "4 (RAKITIC)"
+            },
+            {
+                value: 3,
+                name: "5 (BUSQUETS)"
+            },
+            {
+                value: 4,
+                name: "6 (XAVI)"
+            },
+            {
+                value: 5,
+                name: "8 (INIESTA)"
+            },
+            {
+                value: 6,
+                name: "9 (SUAREZ)"
+            },
+            {
+                value: 7,
+                name: "10 (MESSI)"
+            },
+            {
+                value: 8,
+                name: "11 (NEYMAR)"
+            },
+            {
+                value: 9,
+                name: "18 (JORDI ALBA)"
+            },
+            {
+                value: 10,
+                name: "22 (DANI ALVES)"
+        },
+    ]
+    },
+    RMA: {
+
+    }
+}
+
+const sizeProduct = [
+    {
+        value: 1,
+        name: "S"
+    },
+    {
+        value: 2,
+        name: "L"
+    },
+    {
+        value: 3,
+        name: "XL"
+    },
+]

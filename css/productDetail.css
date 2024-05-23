@@ -50,6 +50,10 @@
     cursor: pointer;
     margin: 7px 5px 2px 0;
     
+} 
+.clicked{
+  color: #fff !important;
+  background: black !important;
 }
 .mini-img{
     display: flex;
