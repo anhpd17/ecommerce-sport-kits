@@ -161,3 +161,20 @@
   color: white !important;
   background-color: black !important; 
 }
+
+.addtocart button{
+  height: 50px;
+  width: 450px;
+  background-color: white;
+}
+
+.addtocart{
+  margin: 15px 0;
+}
+
+.buyproduct button{
+  height: 50px;
+  width: 450px;
+  background-color: black;
+  color: white;
+}
