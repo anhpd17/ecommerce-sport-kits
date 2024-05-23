@@ -118,10 +118,18 @@ const sizeProduct = [
     },
     {
         value: 2,
-        name: "L"
+        name: "M"
     },
     {
         value: 3,
+        name: "L"
+    },
+    {
+        value: 4,
         name: "XL"
+    },
+    {
+        value: 5,
+        name: "XXL"
     },
 ]

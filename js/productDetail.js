@@ -38,7 +38,7 @@ function renderSizeAndType(){
 
     for (let index = 0; index < sizeProduct.length; index++) {
         const element = sizeProduct[index];
-        querySize += `<button>${element.name}</button>`
+        querySize += `<button id="size-${index}" onclick="chooseSize2(${index})">${element.name}</button>`
     }
 
     sizeDiv.innerHTML = querySize;
@@ -60,3 +60,17 @@ function clearColorPlayerBtn(){
 
 renderImg();
 renderSizeAndType();
+
+function chooseSize2(index){
+    clearColorPlayerBtn2();
+    let btn = document.getElementById(`size-${index}`);
+    btn.classList.toggle('clicked');
+}
+
+function clearColorPlayerBtn2(){
+    for (let index = 0; index < sizeProduct.length; index++) {
+        let idSize = `size-${index}`;
+        let btn = document.getElementById(idSize);
+        btn.classList.remove('clicked');
+    }
+}

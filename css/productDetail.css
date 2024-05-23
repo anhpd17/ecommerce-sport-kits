@@ -50,10 +50,6 @@
     cursor: pointer;
     margin: 7px 5px 2px 0;
     
-} 
-.clicked{
-  color: #fff !important;
-  background: black !important;
 }
 .mini-img{
     display: flex;
@@ -153,4 +149,15 @@
 .smalltext h6{
   font-size: 16px;
   font-weight: 300;
+}
+.mini-img img:hover{
+  cursor: pointer;
+  border: 1px solid;
+  opacity: 0.7
+  ;
+}
+
+.clicked{
+  color: white !important;
+  background-color: black !important; 
 }
