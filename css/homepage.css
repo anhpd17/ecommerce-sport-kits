@@ -35,8 +35,7 @@
     display: flex;
     justify-content: space-evenly;
     margin: 50px 0;
-    padding: 0 100px;
-    
+    /* padding: 0 100px; */
   }
   .product-item1 .name{
     font-size: 20px;
