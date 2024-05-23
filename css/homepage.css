@@ -90,3 +90,8 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+.detail-container a{
+  color: white;
+  text-decoration: none;
+}
