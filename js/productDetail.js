@@ -87,6 +87,8 @@ function addCart(){
     let cartList = JSON.parse(localStorage.getItem('cart')) || [];
     let newItem = {
         ID: "FCB",
+        price: productDetailData.FCB.price,
+        name: productDetailData.FCB.name,
         size: selectedSize,
         player: selectedPlayer,
         quantity: Number.parseInt(document.getElementById('input_quan').value)
