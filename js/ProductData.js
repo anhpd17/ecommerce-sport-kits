@@ -2,17 +2,20 @@ const ProductData = [
     {
         img: 'https://retrokitshop.com/cdn/shop/products/Skjermbilde2023-01-29153428.png?v=1684539540&width=990',
         name: "AC MILAN",
-        price: 100000
+        price: 100000,
+        urlPage: '../ProductDetail/ProductDetail2.html',
     },
     {
         img: 'https://retrokitshop.com/cdn/shop/products/Skjermbilde2023-01-29174729.png?v=1683890991&width=990',
         name: "MANCHESTER UNITED",
-        price: 100000
+        price: 100000,
+        urlPage: '../ProductDetail/ProductDetail3.html',
     },
     {
         img: 'https://retrokitshop.com/cdn/shop/products/3fb19b84.jpg?v=1683888377&width=990',
         name: "FC BARCELONA",
-        price: 100000
+        price: 100000,
+        urlPage: '../ProductDetail/ProductDetail.html',
     },
     {
         img: 'https://retrokitshop.com/cdn/shop/products/Skjermbilde2023-01-29151039.png?v=1683887821&width=990',

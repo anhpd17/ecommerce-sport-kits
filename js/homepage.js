@@ -11,7 +11,7 @@ function renderHome(){
             <div class="info" style="font-weight: bold;">${element.name}</div>
             <div class="info" >$${element.price} USD</div>
             <div class="detail-outer">
-            <div class="detail-container">Details</div>
+            <a href="${element.urlPage}" style="text-decoration: none"><div class="detail-container">Details</div></a>
             </div>
         </div>
         `
