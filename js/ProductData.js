@@ -106,8 +106,93 @@ const productDetailData = {
         },
     ]
     },
-    RMA: {
-
+    ACM: {
+        player: [
+            {
+                value: 1,
+                name: "2 (CAFU)"
+            },
+            {
+                value: 2,
+                name: "3 (MALDINI)"
+            },
+            {
+                value: 3,
+                name: "8 (GATTUSO)"
+            },
+            {
+                value: 4,
+                name: "9 (INZAGHI)"
+            },
+            {
+                value: 5,
+                name: "10 (SEEDORF)"
+            },
+            {
+                value: 6,
+                name: "13 (NESTA)"
+            },
+            {
+                value: 7,
+                name: "21 (PIRLO)"
+            },
+            {
+                value: 8,
+                name: "22 (KAKA)"
+            },
+            {
+                value: 9,
+                name: "99 (RONALDO)"
+            },
+            {
+                value: 10,
+                name: "NO NAME OR NUMBER"
+    }
+]
+    },
+    MUN: {
+        player: [
+            {
+                value: 1,
+                name: "2 (NEVILLE)"
+            },
+            {
+                value: 2,
+                name: "3 (EVRA)"
+            },
+            {
+                value: 3,
+                name: "5 (FERDINAND)"
+            },
+            {
+                value: 4,
+                name: "7 (RONALDO)"
+            },
+            {
+                value: 5,
+                name: "10 (ROONEY)"
+            },
+            {
+                value: 6,
+                name: "15 (VIDIC)"
+            },
+            {
+                value: 7,
+                name: "17 (NANI)"
+            },
+            {
+                value: 8,
+                name: "18 (SCHOLES)"
+            },
+            {
+                value: 9,
+                name: "2O (SOLSKJAER)"
+            },
+            {
+                value: 10,
+                name: "NO NAME OR NUMBER"
+    }
+]
     }
 }
 
