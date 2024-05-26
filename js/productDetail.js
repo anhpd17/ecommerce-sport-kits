@@ -1,3 +1,8 @@
+var selectedSize;
+var selectedPlayer;
+
+document.getElementById('input_quan').value = 1;
+
 function renderImg(){
     let linkMiniImgs = [
         "https://retrokitshop.com/cdn/shop/products/3fb19b84.jpg?v=1683888377&width=990",
@@ -38,7 +43,7 @@ function renderSizeAndType(){
 
     for (let index = 0; index < sizeProduct.length; index++) {
         const element = sizeProduct[index];
-        querySize += `<button id="size-${index}" onclick="chooseSize2(${index})">${element.name}</button>`
+        querySize += `<button id="size-${index}" onclick="chooseSize2(${index})">${element}</button>`
     }
 
     sizeDiv.innerHTML = querySize;
@@ -48,6 +53,7 @@ function chooseSize(index){
     clearColorPlayerBtn();
     let btn = document.getElementById(`player-${index}`);
     btn.classList.toggle('clicked');
+    selectedPlayer = productDetailData.FCB.player[index].value;
 }
 
 function clearColorPlayerBtn(){
@@ -65,6 +71,7 @@ function chooseSize2(index){
     clearColorPlayerBtn2();
     let btn = document.getElementById(`size-${index}`);
     btn.classList.toggle('clicked');
+    selectedSize = sizeProduct[index];
 }
 
 function clearColorPlayerBtn2(){
@@ -73,4 +80,26 @@ function clearColorPlayerBtn2(){
         let btn = document.getElementById(idSize);
         btn.classList.remove('clicked');
     }
+}
+let addCartBtn = document.getElementById('add-to-cart');
+addCartBtn.addEventListener('click', addCart)
+function addCart(){
+    let cartList = JSON.parse(localStorage.getItem('cart')) || [];
+    let newItem = {
+        ID: "FCB",
+        size: selectedSize,
+        player: selectedPlayer,
+        quantity: Number.parseInt(document.getElementById('input_quan').value)
+    }
+    cartList.push(newItem);
+    localStorage.setItem('cart', JSON.stringify(cartList));
+}
+
+function decreaseQuan(){
+    if(document.getElementById('input_quan').value > 1){
+        document.getElementById('input_quan').value -= 1;
+    }
+}
+function increaseQuan(){
+    document.getElementById('input_quan').value = Number.parseInt(document.getElementById('input_quan').value) + 1;
 }

@@ -111,25 +111,4 @@ const productDetailData = {
     }
 }
 
-const sizeProduct = [
-    {
-        value: 1,
-        name: "S"
-    },
-    {
-        value: 2,
-        name: "M"
-    },
-    {
-        value: 3,
-        name: "L"
-    },
-    {
-        value: 4,
-        name: "XL"
-    },
-    {
-        value: 5,
-        name: "XXL"
-    },
-]
+const sizeProduct = [ 'S', 'M', "L", 'XL', 'XXL'];
