@@ -1,5 +1,4 @@
 let cartLS = JSON.parse(localStorage.getItem("cart")) || [];
-console.log(cartLS);
 function renderCart(){
     let query = "";
 
@@ -55,5 +54,10 @@ function handleIncrease(productIndex){
 
 function formatMoney(amount){
     return amount.toLocaleString();
+}
+
+function buyCart(){
+    localStorage.clear('cart');
+    renderCart();
 }
 renderCart();
