@@ -1,5 +1,5 @@
 let cartLS = JSON.parse(localStorage.getItem("cart")) || [];
-function renderCart(){
+function renderCart() {
     let query = "";
 
     for (let index = 0; index < cartLS.length; index++) {
@@ -16,7 +16,7 @@ function renderCart(){
             <td>${formatMoney(element.price * element.quantity)}</td>
             <td><button class="remove-btn" onclick="handleRemove(${index})">Remove</button></td>
         </tr>
-        `
+        `;
     }
 
     let listCartItem = document.getElementById("list-cart-item");
@@ -24,11 +24,11 @@ function renderCart(){
     listCartItem.innerHTML = query;
 }
 
-function handleDecrease(productIndex){
-    if(cartLS[productIndex].quantity >= 2){
+function handleDecrease(productIndex) {
+    if (cartLS[productIndex].quantity >= 2) {
         // Nếu >= 2 thì giảm 1
         cartLS[productIndex].quantity -= 1;
-    }else if(cartLS[productIndex].quantity == 1){
+    } else if (cartLS[productIndex].quantity == 1) {
         // Nếu đang là 1 mà ấn giảm thì xóa
         cartLS.splice(productIndex, 1);
     }
@@ -37,14 +37,14 @@ function handleDecrease(productIndex){
 
     renderCart();
 }
-function handleRemove(productIndex){
+function handleRemove(productIndex) {
     cartLS.splice(productIndex, 1);
     localStorage.setItem("cart", JSON.stringify(cartLS));
 
     renderCart();
 }
 
-function handleIncrease(productIndex){
+function handleIncrease(productIndex) {
     cartLS[productIndex].quantity += 1;
 
     localStorage.setItem("cart", JSON.stringify(cartLS));
@@ -52,12 +52,12 @@ function handleIncrease(productIndex){
     renderCart();
 }
 
-function formatMoney(amount){
+function formatMoney(amount) {
     return amount.toLocaleString();
 }
 
-function buyCart(){
-    localStorage.clear('cart');
+function buyCart() {
+    localStorage.clear("cart");
     renderCart();
 }
 renderCart();
